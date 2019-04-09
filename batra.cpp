@@ -17,6 +17,12 @@ scanf(" %d",&bt[i]);
 printf("\tEnter the arrival time of %d process :",i+1);
 scanf(" %d",&at[i]);
 }
+ if(at[0]=0)
+ {
+  printf("Arrival time is 0");
+ }
+ else
+ {
  
 
  
@@ -91,5 +97,12 @@ sleep(2);
  
 printf("\n\nAVERAGE WAITING TIME : %f",wavg);
 printf("\nAVERAGE TURN AROUND TIME : %f",tavg);
-return 0;
+int s=0;
+  for(i=0;i<n;i++)
+  {
+   s=s+bt[i];
+   s=s+2;
+  }
+ return 0;
+}
 }
